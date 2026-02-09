@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <h1 className="text-2xl font-semibold text-white cursor-pointer">
-      Jane Doe
+      Prabhat Sharma
     </h1>
   );
 };

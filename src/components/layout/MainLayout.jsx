@@ -1,4 +1,4 @@
-import Header from "../navigation/Header";
+import Header from "../Navigation/Header";
 import HeroSection from "../hero/HeroSection";
 
 const MainLayout = () => {
