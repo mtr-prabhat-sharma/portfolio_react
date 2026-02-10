@@ -1,69 +1,58 @@
 /* =========================
-   Skills Marquee with Logos
+   Skills Section (Card Style)
 ========================= */
 
-.skills-section {
-  //margin-top: 96px;
-  overflow: hidden;
-}
-
-.skills-title {
+.skills-block {
+  padding: 100px 24px;
+  background: var(--color-bg-dark);
   text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 32px;
-  color: var(--color-text-main);
 }
 
-.skills-marquee {
-  width: 100%;
-  overflow: hidden;
+.skills-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 48px;
 }
 
-/* Moving container */
-.skills-track {
+/* Horizontal skills container */
+.skills-row {
   display: flex;
-  gap: 48px;
-  width: max-content;
-  animation: skills-scroll 25s linear infinite;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
-/* STOP animation on hover */
-.skills-marquee:hover .skills-track {
-  animation-play-state: paused;
-}
+/* Individual skill card */
+.skill-card {
+  width: 120px;
+  height: 120px;
+  background: #1a1a1a;
+  border-radius: 12px;
 
-/* Individual skill */
-.skill-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  font-size: 15px;
-  font-weight: 500;
+  justify-content: center;
+  gap: 12px;
+
   color: var(--color-text-muted);
-  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Icon styling */
-.skill-item svg {
-  font-size: 20px;
+/* Icon size */
+.skill-card svg {
+  font-size: 36px;
   color: var(--color-primary);
 }
 
-/* Hover effect per skill */
-.skill-item:hover {
+/* Hover effect */
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   color: var(--color-text-main);
-  transform: translateY(-2px);
-}
-
-/* Infinite scroll animation */
-@keyframes skills-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
 }
