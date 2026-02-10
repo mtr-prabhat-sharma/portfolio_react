@@ -4,19 +4,23 @@ import SocialLinks from "./SocialLinks";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row">
-      
-      {/* LEFT */}
-      <div className="md:w-1/2 bg-orange-500 flex flex-col items-center justify-center relative">
-        <ProfileImage />
+    <section className="min-h-screen flex flex-col md:flex-row relative">
+
+      {/* LEFT (ORANGE) */}
+      <div className="flex-[2] bg-orange-500 relative">
         <div className="absolute bottom-8 left-8">
           <SocialLinks />
         </div>
       </div>
 
-      {/* RIGHT */}
-      <div className="md:w-1/2 bg-neutral-900 flex items-center px-6 md:px-20">
+      {/* RIGHT (BLACK) */}
+      <div className="md:flex-[3] bg-neutral-900 flex items-center justify-center px-6 md:px-20 md:pl-40">
         <HeroContent />
+      </div>
+
+      {/* CENTER PROFILE IMAGE */}
+      <div className="absolute left-[35%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+        <ProfileImage />
       </div>
 
     </section>
