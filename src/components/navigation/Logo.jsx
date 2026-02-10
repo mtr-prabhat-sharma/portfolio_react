@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <h1 className="site-logo">
+    <h1 className="site-logo signature-logo">
       Prabhat Sharma
     </h1>
   );

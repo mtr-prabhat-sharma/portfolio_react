@@ -1,4 +1,6 @@
+import AboutSection from "../AboutSection";
 import Header from "../Navigation/Header";
+import Skills from "../Skills";
 import HeroSection from "../hero/HeroSection";
 
 const MainLayout = () => {
@@ -7,6 +9,8 @@ const MainLayout = () => {
       <Header />
       <main className="main-content">
         <HeroSection />
+        <AboutSection />
+        <Skills />
       </main>
     </div>
   );

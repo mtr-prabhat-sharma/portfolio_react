@@ -10,8 +10,7 @@ const HeroContent = () => {
       </h2>
 
       <p className="hero-description">
-        I build modern, responsive, and accessible web applications
-        with a focus on clean UI and performance.
+       I build modern, responsive, and accessible web applications with a strong focus on clean UI, performance, and scalability. I enjoy turning complex requirements into intuitive user experiences using modern frontend technologies.
       </p>
 
       <CallToActionButtons />

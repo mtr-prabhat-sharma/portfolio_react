@@ -1,3 +1,19 @@
+:root {
+  --color-primary: #f97316;
+  --color-primary-dark: #ea580c;
+
+  --color-bg-dark: #111111;
+  --color-text-main: #ffffff;
+  --color-text-muted: #d1d5db;
+  --color-text-light: #9ca3af;
+
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+
+
+
+
 /* Call To Action Buttons */
 
 .cta-buttons {
@@ -66,7 +82,8 @@
 .hero-name {
   font-size: 36px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-top: 0px;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
@@ -134,7 +151,7 @@
 /* CENTER PROFILE IMAGE */
 .hero-profile {
   position: absolute;
-  left: 35%;
+  left: 32%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -231,12 +248,10 @@
 
 .nav-menu {
   display: none;
+  align-items: center;
   gap: 32px;
-  font-size: 14px;
-  color: #d1d5db; // gray-300
 }
 
-/* Show on desktop */
 @media (min-width: 768px) {
   .nav-menu {
     display: flex;
@@ -244,10 +259,54 @@
 }
 
 .nav-link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: none;
   cursor: pointer;
+  padding: 4px 0;
   transition: color 0.3s ease;
 }
 
-.nav-link:hover {
-  color: #ffffff;
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
 }
+
+.nav-link:hover {
+  color: var(--color-text-main);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Contact CTA */
+.nav-cta {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.nav-cta::after {
+  width: 100%;
+}
+
+/* Signature Logo */
+
+.signature-logo {
+  font-family: 'Allura', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #000; /* or white depending on background */
+  cursor: pointer;
+}
+
