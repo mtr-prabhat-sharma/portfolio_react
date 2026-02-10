@@ -3,9 +3,9 @@ import HeroSection from "../hero/HeroSection";
 
 const MainLayout = () => {
   return (
-    <div className="min-h-screen bg-neutral-900 text-white">
+    <div className="main-layout">
       <Header />
-      <main>
+      <main className="main-content">
         <HeroSection />
       </main>
     </div>

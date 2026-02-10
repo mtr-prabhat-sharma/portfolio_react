@@ -4,22 +4,22 @@ import SocialLinks from "./SocialLinks";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col md:flex-row relative">
+    <section className="hero-section">
 
       {/* LEFT (ORANGE) */}
-      <div className="flex-[2] bg-orange-500 relative">
-        <div className="absolute bottom-8 left-8">
+      <div className="hero-left">
+        <div className="hero-social">
           <SocialLinks />
         </div>
       </div>
 
       {/* RIGHT (BLACK) */}
-      <div className="md:flex-[3] bg-neutral-900 flex items-center justify-center px-6 md:px-20 md:pl-40">
+      <div className="hero-right">
         <HeroContent />
       </div>
 
       {/* CENTER PROFILE IMAGE */}
-      <div className="absolute left-[35%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+      <div className="hero-profile">
         <ProfileImage />
       </div>
 

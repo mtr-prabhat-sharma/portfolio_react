@@ -1,10 +1,10 @@
 const NavigationMenu = () => {
   return (
-    <nav className="hidden md:flex space-x-8 text-sm text-gray-300">
-      <a href="#about" className="hover:text-white">About</a>
-      <a href="#skills" className="hover:text-white">Skills</a>
-      <a href="#projects" className="hover:text-white">Projects</a>
-      <a href="#contact" className="hover:text-white">Contact</a>
+    <nav className="nav-menu">
+      <a href="#about" className="nav-link">About</a>
+      <a href="#skills" className="nav-link">Skills</a>
+      <a href="#projects" className="nav-link">Projects</a>
+      <a href="#contact" className="nav-link">Contact</a>
     </nav>
   );
 };

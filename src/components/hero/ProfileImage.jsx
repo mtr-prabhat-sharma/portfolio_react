@@ -5,7 +5,7 @@ const ProfileImage = () => {
     <img
       src={profile}
       alt="Profile"
-      className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover"
+      className="profile-image"
     />
   );
 };

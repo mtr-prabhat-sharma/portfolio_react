@@ -1,0 +1,253 @@
+/* Call To Action Buttons */
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Outline Button */
+.btn-outline {
+  border: 1px solid #f97316;
+  background: transparent;
+  color: #f97316;
+
+  &:hover {
+    background: #f97316;
+    color: #ffffff;
+  }
+}
+
+/* Primary Button */
+.btn-primary {
+  background: #f97316;
+  color: #ffffff;
+  border: none;
+
+  &:hover {
+    background: #ea580c;
+  }
+}
+
+/* =========================
+   Hero Content
+========================= */
+
+.hero-content {
+  max-width: 640px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    text-align: left;
+  }
+}
+
+.hero-role {
+  color: #9ca3af; // gray-400
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.hero-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 48px;
+  }
+}
+
+.hero-description {
+  color: #d1d5db; // gray-300
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   Hero Section Layout
+========================= */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+  }
+}
+
+/* LEFT (ORANGE) */
+.hero-left {
+  flex: 2;
+  background: #f97316; // orange-500
+  position: relative;
+}
+
+/* Social icons position */
+.hero-social {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+}
+
+/* RIGHT (BLACK) */
+.hero-right {
+  flex: 3;
+  background: #111; // neutral-900
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Desktop padding adjustments */
+@media (min-width: 768px) {
+  .hero-right {
+    padding: 0 80px;
+    padding-left: 160px;
+  }
+}
+
+/* CENTER PROFILE IMAGE */
+.hero-profile {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* =========================
+   Profile Image
+========================= */
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Desktop size */
+@media (min-width: 768px) {
+  .profile-image {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+/* =========================
+   Social Links
+========================= */
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  color: #000;
+}
+
+.social-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   Main Layout
+========================= */
+
+.main-layout {
+  min-height: 100vh;
+  background: #111; // neutral-900
+  color: #ffffff;
+}
+
+.main-content {
+  width: 100%;
+}
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-container {
+  max-width: 1280px; // max-w-7xl
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.site-logo {
+  font-size: 24px;     // text-2xl
+  font-weight: 600;    // font-semibold
+  color: #ffffff;      // text-white
+  cursor: pointer;
+}
+
+/* =========================
+   Navigation Menu
+========================= */
+
+.nav-menu {
+  display: none;
+  gap: 32px;
+  font-size: 14px;
+  color: #d1d5db; // gray-300
+}
+
+/* Show on desktop */
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}

@@ -1,6 +1,6 @@
 const Logo = () => {
   return (
-    <h1 className="text-2xl font-semibold text-white cursor-pointer">
+    <h1 className="site-logo">
       Prabhat Sharma
     </h1>
   );
